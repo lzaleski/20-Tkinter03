@@ -37,6 +37,9 @@ name = tk.Label(
 )
 name.pack()
 name_e = tk.Entry(master = nameFrame)
+name_e.pack(fill = tk.X)
+
+
 
 ad1Frame = tk.Frame(
     master = form,
@@ -53,6 +56,9 @@ addressLine1 = tk.Label(
 )
 addressLine1.pack()
 addressLine1_e =tk.Entry(master = ad1Frame)
+addressLine1_e.pack(fill = tk.X)
+
+
 
 ad2Frame = tk.Frame(
     master = form,
@@ -69,6 +75,9 @@ addressLine2 = tk.Label(
 )
 addressLine2.pack()
 addressLine2_e =tk.Entry(master=ad2Frame)
+addressLine2_e.pack(fill = tk.X)
+
+
 
 cityFrame = tk.Frame(
     master = form,
@@ -85,6 +94,9 @@ city = tk.Label(
 )
 city.pack()
 city_e =tk.Entry(master=cityFrame)
+city_e.pack(fill = tk.X)
+
+
 
 stateFrame = tk.Frame(
     master = form,
@@ -101,6 +113,9 @@ state = tk.Label(
 )
 state.pack()
 state_e =tk.Entry(master=stateFrame)
+state_e.pack(fill = tk.X)
+
+
 
 zipFrame = tk.Frame(
     master = form,
@@ -117,6 +132,9 @@ zipCode = tk.Label(
 )
 zipCode.pack()
 zipCode_e =tk.Entry(master=zipFrame)
+zipCode_e.pack(fill = tk.X)
+
+
 
 phoneFrame = tk.Frame(
     master = form,
@@ -133,6 +151,9 @@ phoneNumber = tk.Label(
 )
 phoneNumber.pack()
 phoneNumber_e =tk.Entry(master=phoneFrame)
+phoneNumber_e.pack(fill = tk.X)
+
+
 
 emailFrame = tk.Frame(
     master = form,
@@ -149,13 +170,16 @@ emailAddress = tk.Label(
 )
 emailAddress.pack()
 emailAddress_e =tk.Entry(master=emailFrame)
+emailAddress_e.pack(fill = tk.X)
+
+
 
 submitFrame = tk.Frame(
     master = form,
     relief =tk.RAISED,
     borderwidth = 5
 )
-submitFrame.grid(row = 0, column = 2, padx = 0, pady = 0, sticky = "nsew")
+submitFrame.grid(row = 1, column = 2, padx = 0, pady = 0, sticky = "nsew")
 submit =tk.Button(
     master=submitFrame,
     text = "Submit",
@@ -163,6 +187,8 @@ submit =tk.Button(
     fg = "black"
 )
 submit.pack()
+submit.pack(fill = tk.X)
+
 
 
 
